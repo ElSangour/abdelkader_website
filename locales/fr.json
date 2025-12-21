@@ -1,0 +1,68 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "livres": "Livres",
+    "dourous": "Dourous",
+    "khoutab": "Khoutab"
+  },
+  "common": {
+    "readMore": "Lire plus",
+    "readLess": "Lire moins",
+    "download": "Télécharger",
+    "play": "Lecture",
+    "pause": "Pause",
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair"
+  },
+  "home": {
+    "title": "Dr. Abd El Kader Gaha",
+    "subtitle": "Savant islamique - Université Zitouna",
+    "youtubeChannel": "Chaîne YouTube",
+    "biography": "Bonjour, je m'appelle Abd El Kader Gaha, né à Monastir (Manzil Kamel) le 13 janvier 1940 (correspondant environ au 3 Dhou Al-Hijja 1358 H). Je fais partie des plus anciens savants diplômés de l'Université Zitouna en sciences religieuses en Tunisie. Je suis titulaire d'un doctorat d'État et imam à la mosquée Al-Hafsi de la Kasbah depuis 1990, où je dirige la prière du vendredi et les prières des fêtes. Sur ma chaîne YouTube, je partage ma biographie, mes recherches, ma pensée et mes livres. Je présente également toutes mes conférences, prêches du vendredi, interventions académiques et réalisations – tout cela par la grâce et la générosité d'Allah.",
+    "resumeTitle": "Résumé du parcours :",
+    "resume": [
+      "Né le 13 janvier 1940 à Manzil Kamel, Monastir.",
+      "A mémorisé le Coran sous l'enseignement de son frère le Cheikh Mohamed Ben El Hajj Taher Gaha (qu'Allah lui fasse miséricorde).",
+      "Diplôme d'aptitude (Ahliyya) – Lycée Zitouna de Jemmal, 1959 (mention Bien)",
+      "Diplôme de formation des enseignants – Collège Zitouna, Tunis, 1962 (mention Bien)",
+      "Diplôme en Lettres et Civilisation française – Institut des Langues Vivantes, Sousse, 1970 (mention Bien)",
+      "Licence en Fondements de la Religion – Faculté de la Charia et des Fondements de la Religion, Zitouna, 1971 (mention Très Bien)",
+      "Certificat d'Aptitude à la Recherche (CAR) (mention Très Bien)",
+      "Doctorat de 3e cycle en Fondements de la Religion – Tunis, 1986 (mention Très Bien)",
+      "Doctorat d'État en Fondements de la Religion – Université Zitouna, Institut Supérieur des Fondements de la Religion, 2003 (mention Très Honorable avec félicitations et recommandation de publication)",
+      "Professeur à l'Université Zitouna et Imam Khatib de la mosquée Al-Hafsi de la Kasbah depuis 1990.",
+      "Auteur et chercheur en pensée islamique, avec plusieurs ouvrages et articles publiés dans des revues spécialisées.",
+      "Parmi ses ouvrages : « L'exégèse thématique chez les Mu'tazilites » et « Recherche sur la théorie imâmite »."
+    ]
+  },
+  "livres": {
+    "title": "Livres",
+    "subtitle": "Ouvrages et publications du Dr. Abd El Kader Gaha",
+    "books": [
+      {
+        "title": "L'exégèse thématique chez les Mu'tazilites",
+        "description": "Une étude approfondie de la méthodologie exégétique des Mu'tazilites et leur approche thématique du Coran."
+      },
+      {
+        "title": "Recherche sur la théorie imâmite",
+        "description": "Analyse critique et recherche sur les fondements théologiques de la théorie imâmite."
+      },
+      {
+        "title": "Études en sciences islamiques",
+        "description": "Recueil d'articles et d'études sur différents aspects des sciences islamiques."
+      }
+    ]
+  },
+  "dourous": {
+    "title": "Dourous",
+    "subtitle": "Cours et enseignements du Dr. Abd El Kader Gaha"
+  },
+  "khoutab": {
+    "title": "Khoutab",
+    "subtitle": "Prêches du vendredi du Dr. Abd El Kader Gaha"
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "description": "Site officiel du Dr. Abd El Kader Gaha"
+  }
+}
