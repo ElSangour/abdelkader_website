@@ -29,3 +29,10 @@ yarn-error.log*
 
 # optional VSCode settings
 .vscode/
+
+# audio files
+public/audios/*.m4a
+public/audios/*.mp3
+public/audios/*.wav
+public/audios/*.ogg
+public/audios/*.webm
