@@ -29,10 +29,10 @@ export default function LivresPage() {
           {books.map((book, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow dark:border-l-4 dark:border-l-[#008000] dark:hover:border-[#EFBF04]"
             >
               {/* Book Cover Placeholder */}
-              <div className="h-64 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+              <div className="h-64 bg-gradient-to-br from-[#008000] to-[#006600] flex items-center justify-center border-t-4 border-[#EFBF04]">
                 <div className="text-white text-center p-4">
                   <div className="text-6xl mb-4">📖</div>
                   <h3 className="font-bold text-lg">{book.title}</h3>
@@ -53,7 +53,7 @@ export default function LivresPage() {
                   href={`/pdfs/livre-${index + 1}.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors w-full justify-center"
+                  className="inline-flex items-center px-4 py-2 bg-[#008000] hover:bg-[#006600] text-white font-medium rounded-lg transition-colors w-full justify-center ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
                 >
                   <Download className="w-4 h-4 mr-2" />
                   {tCommon('download')}
@@ -65,10 +65,10 @@ export default function LivresPage() {
 
         {/* Note about PDFs */}
         <div className="mt-12 text-center">
-          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 max-w-3xl mx-auto">
-            <p className="text-blue-800 dark:text-blue-200">
+          <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-200 dark:border-green-800 rounded-lg p-6 max-w-3xl mx-auto border-l-4 border-l-[#EFBF04]">
+            <p className="text-green-800 dark:text-green-200">
               <strong>Note :</strong> Les fichiers PDF des livres doivent être placés dans le dossier{' '}
-              <code className="bg-blue-100 dark:bg-blue-800 px-2 py-1 rounded">
+              <code className="bg-green-100 dark:bg-green-800 px-2 py-1 rounded">
                 /public/pdfs/
               </code>{' '}
               avec les noms : livre-1.pdf, livre-2.pdf, livre-3.pdf

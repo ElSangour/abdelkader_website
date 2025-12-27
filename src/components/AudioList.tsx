@@ -35,7 +35,7 @@ export default function AudioList({ audios }: AudioListProps) {
             placeholder="ابحث عن خطبة..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400"
+            className="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#008000] dark:focus:ring-[#008000] focus:border-[#EFBF04]"
           />
         </div>
         {searchQuery && (
@@ -59,7 +59,7 @@ export default function AudioList({ audios }: AudioListProps) {
           filteredAudios.map((audio) => (
             <div
               key={audio.id}
-              className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow dark:border-l-4 dark:border-l-[#008000] dark:hover:border-[#EFBF04]"
             >
               <div className="flex items-start gap-4">
                 <button
@@ -68,7 +68,7 @@ export default function AudioList({ audios }: AudioListProps) {
                       currentPlayingId === audio.id ? null : audio.id
                     )
                   }
-                  className="flex-shrink-0 mt-1 p-2 rounded-full bg-blue-500 hover:bg-blue-600 text-white transition-colors"
+                  className="flex-shrink-0 mt-1 p-2 rounded-full bg-[#008000] hover:bg-[#006600] text-white transition-colors ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
                   aria-label={`تشغيل ${audio.title}`}
                 >
                   <Play className="w-4 h-4" fill="currentColor" />

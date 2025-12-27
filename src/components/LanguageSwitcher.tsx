@@ -22,8 +22,8 @@ export default function LanguageSwitcher() {
           onClick={() => switchLanguage('fr')}
           className={`px-2 py-1 text-sm rounded transition-colors ${
             locale === 'fr'
-              ? 'bg-blue-600 text-white'
-              : 'text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
+              ? 'bg-[#008000] text-white ring-2 ring-[#EFBF04]'
+              : 'text-gray-600 hover:text-[#008000] dark:text-gray-300 dark:hover:text-[#008000] hover:ring-1 hover:ring-[#EFBF04]'
           }`}
         >
           FR
@@ -32,8 +32,8 @@ export default function LanguageSwitcher() {
           onClick={() => switchLanguage('ar')}
           className={`px-2 py-1 text-sm rounded transition-colors ${
             locale === 'ar'
-              ? 'bg-blue-600 text-white'
-              : 'text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400'
+              ? 'bg-[#008000] text-white ring-2 ring-[#EFBF04]'
+              : 'text-gray-600 hover:text-[#008000] dark:text-gray-300 dark:hover:text-[#008000] hover:ring-1 hover:ring-[#EFBF04]'
           }`}
         >
           AR

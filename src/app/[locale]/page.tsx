@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-12 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+      <section className="py-12 bg-gradient-to-b from-green-50 to-white dark:from-[#004d00] dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Profile Image Placeholder */}
@@ -28,7 +28,7 @@ export default function HomePage() {
               href="https://www.youtube.com/@DocteurAbdElKaderGaha"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
             >
               <Youtube className="w-5 h-5 mr-2" />
               {t('youtubeChannel')}
@@ -62,12 +62,12 @@ export default function HomePage() {
       </section>
 
       {/* Quick Links Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 dark:bg-[#001a00]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <Link
               href="/livres"
-              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow border-2 border-transparent dark:hover:border-[#EFBF04] dark:border-l-4 dark:border-l-[#008000]"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 📚 Livres
@@ -79,7 +79,7 @@ export default function HomePage() {
             
             <Link
               href="/dourous"
-              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow border-2 border-transparent dark:hover:border-[#EFBF04] dark:border-l-4 dark:border-l-[#008000]"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 🎓 Dourous
@@ -91,7 +91,7 @@ export default function HomePage() {
             
             <Link
               href="/khoutab"
-              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-lg transition-shadow border-2 border-transparent dark:hover:border-[#EFBF04] dark:border-l-4 dark:border-l-[#008000]"
             >
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 🕌 Khoutab

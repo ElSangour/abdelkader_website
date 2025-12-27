@@ -72,7 +72,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${notoKufiArabic.variable} antialiased min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
+        className={`${geistSans.variable} ${notoKufiArabic.variable} antialiased min-h-screen flex flex-col bg-white dark:bg-[#001a00] text-gray-900 dark:text-gray-100`}
+        suppressHydrationWarning
       >
         <Providers>
           <NextIntlClientProvider messages={messages}>
