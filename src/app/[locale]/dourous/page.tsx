@@ -64,7 +64,7 @@ export default function DourousPage() {
             href="https://www.youtube.com/@DocteurAbdElKaderGaha"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg transition-colors ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
           >
             🎥 Visiter la chaîne YouTube complète
             <ExternalLink className="w-4 h-4 ml-2" />
@@ -76,7 +76,7 @@ export default function DourousPage() {
           {videos.map((video, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow dark:border-l-4 dark:border-l-[#008000] dark:hover:border-[#EFBF04]"
             >
               {/* Video Embed */}
               <div className="relative aspect-video">
@@ -116,11 +116,11 @@ export default function DourousPage() {
               href="https://www.youtube.com/@DocteurAbdElKaderGaha/playlists"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-6 bg-gradient-to-br from-blue-500 to-blue-600 text-white rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-105"
+              className="p-6 bg-gradient-to-br from-[#008000] to-[#006600] text-white rounded-lg hover:from-[#006600] hover:to-[#004d00] transition-all transform hover:scale-105 ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
             >
               <div className="text-4xl mb-4">📚</div>
               <h3 className="text-xl font-bold mb-2">Série Tafsir</h3>
-              <p className="text-blue-100">Cours complets sur l&apos;exégèse coranique</p>
+              <p className="text-green-100">Cours complets sur l&apos;exégèse coranique</p>
             </Link>
 
             <Link

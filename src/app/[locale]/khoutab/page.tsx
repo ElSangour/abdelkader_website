@@ -77,8 +77,8 @@ export default function KhoutabPage() {
 
         {/* Instructions */}
         <div className="mt-12 text-center">
-          <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6 max-w-3xl mx-auto">
-            <p className="text-blue-800 dark:text-blue-200 text-sm">
+          <div className="bg-green-50 dark:bg-green-900/20 border-2 border-green-200 dark:border-green-800 rounded-lg p-6 max-w-3xl mx-auto border-l-4 border-l-[#EFBF04]">
+            <p className="text-green-800 dark:text-green-200 text-sm">
               <strong>ملاحظة :</strong> جميع الخطب المتاحة موجودة في القائمة أعلاه. يمكنك
               البحث عن خطبة محددة باستخدام شريط البحث.
             </p>
