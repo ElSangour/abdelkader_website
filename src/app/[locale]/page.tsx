@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Youtube, ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
@@ -11,9 +12,16 @@ export default function HomePage() {
       <section className="py-12 bg-gradient-to-b from-green-50 to-white dark:from-[#004d00] dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            {/* Profile Image Placeholder */}
-            <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <div className="text-6xl text-gray-400">👤</div>
+            {/* Profile Image */}
+            <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[#EFBF04] shadow-lg ring-4 ring-[#008000] relative">
+              <Image
+                src="/images/profile.png"
+                alt="د. عبد القادر ڨحة"
+                width={192}
+                height={192}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
             
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4">

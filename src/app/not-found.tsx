@@ -11,7 +11,7 @@ export default function NotFound() {
               Page non trouvée
             </p>
             <Link
-              href="/fr"
+              href="/ar"
               className="inline-flex items-center px-6 py-3 bg-[#008000] hover:bg-[#006600] text-white font-medium rounded-lg transition-colors ring-2 ring-[#EFBF04] hover:ring-[#EFBF04]"
             >
               Retour à l&apos;accueil
