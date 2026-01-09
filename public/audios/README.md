@@ -9,4 +9,4 @@ Placez vos fichiers audio MP3 des khoutab dans ce dossier avec les noms suivants
 - `khutba-5.mp3` - خطبة الجمعة: طلب العلم
 - `khutba-6.mp3` - خطبة الجمعة: الأخلاق الإسلامية
 
-Les fichiers audio seront diffusés avec le lecteur audio intégré sur la page des khoutab.
+Les fichiers audio seront diffusés avec le lecteur audio intégré sur la page des khoutab ect,...
