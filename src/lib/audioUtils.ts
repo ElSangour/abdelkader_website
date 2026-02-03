@@ -9,20 +9,21 @@ export interface AudioFile {
 }
 
 /**
- * Get all audio files from the data/audio directory
+ * Get all audio files from the public/audios directory
  */
 export async function getAudioFiles(): Promise<AudioFile[]> {
   try {
-    const audioDir = path.join(process.cwd(), 'data', 'audio');
+    const audioDir = path.join(process.cwd(), 'public', 'audios');
     const files = await fs.readdir(audioDir);
 
     const audioFiles: AudioFile[] = files
       .filter(file => /\.(m4a|mp3|wav|ogg|webm)$/i.test(file))
+      .filter(file => file !== 'README.md') // Exclude README file
       .map((file, index) => ({
         id: `audio-${index + 1}`,
         filename: file,
         title: file.replace(/\.[^.]+$/, ''), // Remove file extension
-        url: `/audios/${file}` // Assuming files will be copied/linked to public/audios
+        url: `/audios/${file}` // Files are already in public/audios
       }));
 
     return audioFiles;
