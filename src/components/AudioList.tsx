@@ -113,8 +113,12 @@ export default function AudioList({ audios }: AudioListProps) {
                       className="w-full"
                       onPlay={() => setCurrentPlaying(audio.id)}
                       onEnded={() => setCurrentPlaying(null)}
+                      preload="metadata"
                     >
-                      <source src={audio.url} />
+                      <source 
+                        src={audio.url} 
+                        type={audio.filename.endsWith('.m4a') ? 'audio/mp4' : 'audio/mpeg'} 
+                      />
                       متصفحك لا يدعم تشغيل الصوت
                     </audio>
                   </div>
