@@ -40,16 +40,16 @@
     "subtitle": "Ouvrages et publications du Dr. Abd El Kader Gaha",
     "books": [
       {
-        "title": "L'exégèse thématique chez les Mu'tazilites",
-        "description": "Une étude approfondie de la méthodologie exégétique des Mu'tazilites et leur approche thématique du Coran."
+        "title": "dirasa_tasileya",
+        "description": "Études en sciences islamiques - Recueil d'articles et d'études sur différents aspects des sciences islamiques et la pensée islamique."
       },
       {
-        "title": "Recherche sur la théorie imâmite",
-        "description": "Analyse critique et recherche sur les fondements théologiques de la théorie imâmite."
+        "title": "imamat_mafdhoul",
+        "description": "Recherche sur la théorie de l'Imamat - Analyse critique et recherche approfondie sur les fondements théologiques et jurisprudentiels de la théorie de l'Imamat."
       },
       {
-        "title": "Études en sciences islamiques",
-        "description": "Recueil d'articles et d'études sur différents aspects des sciences islamiques."
+        "title": "abdelkader_cv",
+        "description": "Curriculum Vitae - Parcours académique et professionnel du Dr. Abd El Kader Gaha, ses réalisations et contributions."
       }
     ]
   },
