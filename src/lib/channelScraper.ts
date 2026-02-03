@@ -89,7 +89,17 @@ export async function fetchChannelWithAPI(channelId: string, apiKey: string): Pr
     const data = await response.json();
     
     // Transform API response to our format
-    const videos: YouTubeVideo[] = data.items.map((item: any) => ({
+    const videos: YouTubeVideo[] = data.items.map((item: {
+      id: { videoId: string };
+      snippet: {
+        title: string;
+        description: string;
+        thumbnails: {
+          medium: { url: string };
+        };
+        publishedAt: string;
+      };
+    }) => ({
       id: item.id.videoId,
       title: item.snippet.title,
       description: item.snippet.description,
