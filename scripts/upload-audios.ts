@@ -4,12 +4,12 @@ import { join } from 'path';
 import { config } from 'dotenv';
 
 // Load environment variables
-config({ path: '.env.local' });
+config({ path: '.env' });
 
 const BLOB_READ_WRITE_TOKEN = process.env.BLOB_READ_WRITE_TOKEN;
 
 if (!BLOB_READ_WRITE_TOKEN) {
-  console.error('BLOB_READ_WRITE_TOKEN is not set in .env.local');
+  console.error('BLOB_READ_WRITE_TOKEN is not set in .env');
   process.exit(1);
 }
 

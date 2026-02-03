@@ -3,10 +3,10 @@ import { put, head } from '@vercel/blob';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { filename: string } }
+  context: { params: Promise<{ filename: string }> }
 ) {
   try {
-    const filename = params.filename;
+    const { filename } = await context.params;
     
     // Check if blob exists
     const blob = await head(filename);
