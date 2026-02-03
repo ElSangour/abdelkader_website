@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ExternalLink, Play } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useLocale } from 'next-intl';
-import { fetchChannelVideos, youtubeToVideo } from '@/lib/youtubeScraper';
+import { fetchManualVideos, filterVideosByTitle, translateToFrench } from '@/lib/manualVideoScraper';
+import type { YouTubeVideo } from '@/lib/manualVideoScraper';
+import YOUTUBE_CONFIG from '@/config/youtube';
 import type { Video } from '@/types/video';
 import VideoPlayer from '@/components/VideoPlayer';
 
@@ -19,10 +21,12 @@ export default function DourousPage() {
   useEffect(() => {
     const loadVideos = async () => {
       try {
-        const youtubeVideos = await fetchChannelVideos();
-        const formattedVideos = youtubeVideos.map((video) => 
-          youtubeToVideo(video, locale)
-        );
+        const youtubeVideos = await fetchManualVideos();
+        const formattedVideos = youtubeVideos.map((video: YouTubeVideo) => ({
+          ...video,
+          title: locale === 'fr' ? translateToFrench(video.title) : video.title,
+          type: 'youtube' as const
+        }));
         setVideos(formattedVideos);
       } catch (error) {
         console.error('Error loading videos:', error);

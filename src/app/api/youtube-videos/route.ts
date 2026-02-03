@@ -1,13 +1,14 @@
 import { NextResponse } from 'next/server';
 import { fetchManualVideos, filterVideosByTitle } from '@/lib/manualVideoScraper';
+import { scrapeChannelVideos } from '@/lib/channelScraper';
 import YOUTUBE_CONFIG from '@/config/youtube';
 
 export async function GET() {
   try {
     console.log('Fetching manual videos with real titles...');
     
-    // Step 1: Fetch manual videos with their real titles
-    const allVideos = await fetchManualVideos();
+    // Step 1: Scrape videos from the specific channel
+    const allVideos = await scrapeChannelVideos();
     
     // Step 2: Filter videos that contain target name in the title
     const targetName = YOUTUBE_CONFIG.TARGET_NAME;

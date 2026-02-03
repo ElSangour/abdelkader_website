@@ -1,5 +1,4 @@
-import { Video } from '@/types/video';
-import { fetchManualVideos, filterVideosByTitle, youtubeToVideo } from '@/lib/manualVideoScraper';
+import { fetchManualVideos, filterVideosByTitle } from '@/lib/manualVideoScraper';
 import YOUTUBE_CONFIG from '@/config/youtube';
 
 export interface YouTubeVideo {
@@ -37,6 +36,3 @@ export async function fetchChannelVideos(): Promise<YouTubeVideo[]> {
     ];
   }
 }
-
-// Re-export the translation function from the manual scraper
-export { translateToFrench, youtubeToVideo } from '@/lib/manualVideoScraper';

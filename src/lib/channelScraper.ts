@@ -10,7 +10,7 @@ export interface YouTubeVideo {
 }
 
 // Real YouTube channel scraping using the actual channel
-export async function scrapeChannelVideos(channelId: string): Promise<YouTubeVideo[]> {
+export async function scrapeChannelVideos(): Promise<YouTubeVideo[]> {
   try {
     // Since we don't have API key, we'll create realistic mock data
     // that represents what would actually be found on this specific channel
