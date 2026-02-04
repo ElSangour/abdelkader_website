@@ -23,7 +23,7 @@ export async function getAudioFiles(): Promise<AudioFile[]> {
         id: `audio-${index + 1}`,
         filename: file,
         title: file.replace(/\.[^.]+$/, ''), // Remove file extension
-        url: `/api/audio/${file}` // Use API route to serve from Blob Storage
+        url: `/audios/${file}` // Serve directly from public directory
       }));
 
     return audioFiles;
