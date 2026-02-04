@@ -4,79 +4,82 @@ import { useTranslations } from 'next-intl';
 import AudioList from '@/components/AudioList';
 import type { AudioFile } from '@/lib/audioUtils';
 
-// Audio files from data/audio directory
+// GitHub Release for large audio files (>25MB)
+const GITHUB_RELEASE_URL = 'https://github.com/ElSangour/abdelkader-website/releases/download/audio-files/';
+
+// Audio files - all served from GitHub Releases to avoid Vercel size limits
 const AUDIO_FILES: AudioFile[] = [
   {
     id: 'audio-1',
     filename: 'التسبيح - جزء ٢.m4a',
     title: 'التسبيح - جزء ٢',
-    url: '/audios/التسبيح - جزء ٢.m4a'
+    url: GITHUB_RELEASE_URL + 'التسبيح - جزء ٢.m4a'
   },
   {
     id: 'audio-2',
     filename: 'الاشاعات مع الرسول.m4a',
     title: 'الاشاعات مع الرسول',
-    url: '/audios/الاشاعات مع الرسول.m4a'
+    url: GITHUB_RELEASE_URL + 'الاشاعات مع الرسول.m4a'
   },
   {
     id: 'audio-3',
     filename: 'الاشاعات.m4a',
     title: 'الاشاعات',
-    url: '/audios/الاشاعات.m4a'
+    url: GITHUB_RELEASE_URL + 'الاشاعات.m4a'
   },
   {
     id: 'audio-4',
     filename: 'التسبيح.m4a',
     title: 'التسبيح',
-    url: '/audios/التسبيح.m4a'
+    url: GITHUB_RELEASE_URL + 'التسبيح.m4a'
   },
   {
     id: 'audio-5',
     filename: 'النور.m4a',
     title: 'النور',
-    url: '/audios/النور.m4a'
+    url: GITHUB_RELEASE_URL + 'النور.m4a'
   },
   {
     id: 'audio-6',
     filename: 'رحمة الله عز و جل في الحساب+الايمان و الاسلام.m4a',
     title: 'رحمة الله عز و جل في الحساب+الايمان و الاسلام',
-    url: '/audios/رحمة الله عز و جل في الحساب+الايمان و الاسلام.m4a'
+    url: GITHUB_RELEASE_URL + 'رحمة الله عز و جل في الحساب+الايمان و الاسلام.m4a'
   },
   {
     id: 'audio-7',
     filename: 'رحمة الله عزّ و جل وقت الحساب.m4a',
     title: 'رحمة الله عزّ و جل وقت الحساب',
-    url: '/audios/رحمة الله عزّ و جل وقت الحساب.m4a'
+    url: GITHUB_RELEASE_URL + 'رحمة الله عزّ و جل وقت الحساب.m4a'
   },
   {
     id: 'audio-8',
     filename: 'علاقة الاسلام بالايمان-جزء ٢.m4a',
     title: 'علاقة الاسلام بالايمان-جزء ٢',
-    url: '/audios/علاقة الاسلام بالايمان-جزء ٢.m4a'
+    url: GITHUB_RELEASE_URL + 'علاقة الاسلام بالايمان-جزء ٢.m4a'
   },
   {
     id: 'audio-9',
     filename: 'فضل الأشهر الحلم - جزء الأول.m4a',
     title: 'فضل الأشهر الحلم - جزء الأول',
-    url: '/audios/فضل الأشهر الحلم - جزء الأول.m4a'
+    url: GITHUB_RELEASE_URL + 'فضل الأشهر الحلم - جزء الأول.m4a'
   },
   {
     id: 'audio-10',
     filename: 'فضل الأشهر الحلم - الجزء الثاني.m4a',
     title: 'فضل الأشهر الحلم - الجزء الثاني',
-    url: '/audios/فضل الأشهر الحلم - الجزء الثاني.m4a'
+    url: GITHUB_RELEASE_URL + 'فضل الأشهر الحلم - الجزء الثاني.m4a'
   },
   {
     id: 'audio-11',
     filename: 'نزلة البرد الموسمية.m4a',
     title: 'نزلة البرد الموسمية',
-    url: '/audios/نزلة البرد الموسمية.m4a'
+    url: GITHUB_RELEASE_URL + 'نزلة البرد الموسمية.m4a'
   },
   {
     id: 'audio-12',
     filename: 'الأسراء و المعراج.m4a',
     title: 'الأسراء و المعراج',
-    url: '/audios/الأسراء و المعراج.m4a'
+    url: GITHUB_RELEASE_URL + 'الأسراء و المعراج.m4a'
   }
 ];
 
